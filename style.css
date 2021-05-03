@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
 
+:root {
+	--pure-white: #fff;
+	--base-blue: #add8e6;
+	--light-blue: #03a9f4;
+	--semi-deep-blue: #2a7da2;
+	--deep-blue: #003147;
+	--black-90: #081921;
+	--light-grey: #f0f0f0;
+	--grey-50: #848c99;
+	--dark-grey: #848c90;
+	--long-text-black: #333;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,10 +21,14 @@
 }
 
 body {
-	background: lightBlue;
+	background: var(--base-blue);
 	display: flex;
 	justify-content: center; 
 	min-height: 100vh;
+}
+
+p {
+	color: var(--long-text-black);
 }
 
 .container {
@@ -19,7 +36,7 @@ body {
 	width: 100%;
 	max-width: 1000px;
 	min-height: 1000px;
-	background: #fff; 
+	background: var(--pure-white); 
 	margin: 50px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -28,8 +45,28 @@ body {
 
 .container .left_side {
 	position: relative;
-	background: #003147;
+	background: var(--deep-blue);
 	padding: 40px;
+}
+
+.headerIcon {
+	position: absolute;
+	top: 1rem;
+	right: 1.2rem;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -24px;
+    margin-right: -24px;*/
+    cursor: pointer;
+}
+
+.headerIcon .downloadBtn svg {
+	fill: var(--base-blue);
+}
+
+.headerIcon .downloadBtn svg:hover {
+	fill: var(--pure-white);
 }
 
 .profileText {
@@ -59,7 +96,7 @@ body {
 }
 
 .profileText h2 {
-	color: #fff;
+	color: var(--pure-white);
 	font-size: 1.5em;
 	margin-top: 20px;
 	text-transform: uppercase;
@@ -79,7 +116,7 @@ body {
 }
 
 .title {
-	color: #fff;
+	color: var(--pure-white);
 	text-transform: uppercase;
 	font-weight: 600;
 	letter-spacing: 1px;
@@ -101,12 +138,23 @@ body {
 	display: inline-block;
 	width: 30px;
 	font-size: 18px;
-	color: #03a9f4;
+	color: var(--light-blue);
 }
 
 .contactInfo ul li span {
-	color: #fff;
+	color: var(--pure-white);
 	font-weight: 300;
+}
+
+.contactInfo ul li span a {
+	text-decoration: none;
+	color: var(--pure-white);
+	font-weight: 300;
+	/*transition: all 0.2s;*/
+}
+
+.contactInfo ul li span a:hover {
+	font-weight: 600;
 }
 
 .contactInfo.education li {
@@ -114,17 +162,17 @@ body {
 }
 
 .contactInfo.education h5 {
-	color: #03a9f4;
+	color: var(--light-blue);
 	font-weight: 500;
 }
 
 .contactInfo.education h4:nth-child(2) {
-	color: #fff;
+	color: var(--pure-white);
 	font-weight: 500;
 }
 
 .contactInfo.education h4 {
-	color: #fff;
+	color: var(--pure-white);
 	font-weight: 300;
 }
 
@@ -132,7 +180,7 @@ body {
 	position: relative;
 	width: 100%;
 	height: 6px;
-	background: #081921;
+	background: var(--black-90);
 	display: block;
 	margin-top: 5px;
 }
@@ -142,12 +190,12 @@ body {
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: #03a9f4;
+	background: var(--light-blue);
 }
 
 .container .right_side {
 	position: relative;
-	background: #fff;
+	background: var(--pure-white);
 	padding: 40px;	
 }
 
@@ -160,14 +208,10 @@ body {
 }
 
 .title2 {
-	color: #003147;
+	color: var(--deep-blue);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
-}
- 
-p {
-	color: #333;
 }
 
 .about .box {
@@ -182,13 +226,13 @@ p {
 
 .about .box .year_company h5 {
 	text-transform: uppercase;
-	color: #848c90;
+	color: var(--dark-grey);
 	font-weight: 600;
 }
 
 .about .box .text h4 {
 	text-transform: uppercase;
-	color: #2a7da2;
+	color: var(--semi-deep-blue);
 	font-size: 16px;
 }
 
@@ -203,7 +247,7 @@ p {
 
 .skills .box h4 {
 	text-transform: uppercase;
-	color: #848c99;
+	color: var(--grey-50);
 	font-weight: 500;
 }
 
@@ -211,7 +255,7 @@ p {
 	position: relative;
 	width: 100%;
 	height: 10px;
-	background: #f0f0f0; 
+	background: var(--light-grey); 
 }
 
 .skills .box .percent div {
@@ -219,7 +263,7 @@ p {
 	top: 0;
 	left: 0;
 	height: 100%;
-	background: #03a9f4;
+	background: var(--light-blue);
 }
 
 .interest ul {
@@ -235,7 +279,7 @@ p {
 }
 
 .interest ul li .fas {
-	color: #03a9f4;
+	color: var(--light-blue);
 	font-size: 18px;
 	width: 20px;
 }

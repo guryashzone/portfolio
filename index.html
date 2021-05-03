@@ -9,11 +9,19 @@
 </head>
 <body>
 	<!-- .container -->
-	<div class="container">
+	<div class="container" id="resume">
 
 		<!-- left_side -->
 		<div class="left_side">
 			
+			<!-- headerIcon -->
+			<div class="headerIcon">
+				<div class="downloadBtn" id="download-pdf" title="Genereate PDF">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+				</div>
+			</div>
+			<!-- headerIcon-end -->
+
 			<!-- profileText -->
 			<div class="profileText">
 				<div class="imgBx">
@@ -21,6 +29,7 @@
 				</div>
 				<h2>Guryash Singh<br><span>Web Developer</span></h2>
 			</div>
+			
 			<!-- profileText-end -->
 
 			<!-- contactInfo -->
@@ -29,23 +38,33 @@
 				<ul>
 					<li>
 						<span class="icon"><i class="fas fa-phone"></i></span>
-						<span class="text">+91 8210709174</span>
+						<span class="text">
+							<a href="tel:+918210709174" target="_blank">+91 8210709174</a>
+						</span>
 					</li>
 					<li>
 						<span class="icon"><i class="fas fa-envelope"></i></span>
-						<span class="text">guryash07@gmail.com</span>
+						<span class="text">
+							<a href="mailto:guryash07@gmail.com" target="_blank">guryash07@gmail.com</a>
+						</span>
 					</li>
 					<li>
 						<span class="icon"><i class="fas fa-globe-americas"></i></span>
-						<span class="text">guryash.me</span>
+						<span class="text">
+							<a href="https://guryashzone.github.io/portfolio/" target="_blank">www.guryash.me</a>
+						</span>
 					</li>
 					<li>
-						<span class="icon"><i class="fab fa-linkedin-in"></i></span>
-						<span class="text">linkedin.com/in/guryash07</span>
+						<span class="icon"><i class="fab fa-linkedin-in" target="_blank"></i></span>
+						<span class="text">
+							<a href="https://www.linkedin.com/in/guryash07" target="_blank">linkedin/guryash07</a>
+						</span>
 					</li>
 					<li>
 						<span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-						<span class="text">Jamshedpur, India</span>
+						<span class="text">
+							<a href="https://goo.gl/maps/YiK7UsTpJqtAwhhp9" target="_blank">Jamshedpur, India</a>
+						</span>
 					</li>
 				</ul>
 			</div>
@@ -216,5 +235,8 @@
 
 	</div>
 	<!-- .container-end -->
+
+	<script src="js/html2pdf.bundle.min.js"></script>
+	<script src="main.js"></script>
 </body>
 </html>

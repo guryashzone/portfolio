@@ -84,6 +84,7 @@ p {
 	height: 200px;
 	border-radius: 50%;
 	overflow: hidden;
+	background-color: #03a9f4;
 }
 
 .profileText .imgBx img {
@@ -213,6 +214,16 @@ p {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
+}
+
+.about p a i {
+	font-size: 14px;
+	color: var(--semi-deep-blue);
+}
+
+
+.about p a i:hover {
+	color: var(--light-blue);
 }
 
 .about .box {

@@ -275,6 +275,12 @@ strong {
 	font-size: 18px;
 }
 
+.about .box .text h4 a span {
+	color: var(--semi-deep-blue);
+	font-size: 18px;
+	vertical-align: middle;
+}
+
 .about .box .text p b {
 	font-size: 15px;
 }

@@ -31,9 +31,10 @@ p {
 	color: var(--long-text-black);
 }
 
+/* 
 strong {
 	font-weight: normal;
-}
+} */
 
 .container {
 	position: relative;

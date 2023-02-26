@@ -183,6 +183,11 @@ strong {
 	font-weight: 600;
 }
 
+.contactInfo.industry li span.text {
+	color: var(--pure-white);
+	font-weight: 500;
+}
+
 .contactInfo.education li {
 	margin-bottom: 15px;
 }
@@ -284,6 +289,12 @@ strong {
 
 .about .box .text p b {
 	font-size: 15px;
+}
+
+.about .box .text.work_experience ul {
+	list-style-type: "-  ";
+	/* list-style-position: inside; */
+	margin-left: 17px;
 }
 
 .about .box .text span {

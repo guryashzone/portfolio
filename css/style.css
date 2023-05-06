@@ -6,11 +6,12 @@
 	--light-blue: #03a9f4;
 	--semi-deep-blue: #2a7da2;
 	--deep-blue: #003147;
-	--black-90: #081921;
 	--light-grey: #f0f0f0;
 	--grey-50: #848c99;
 	--dark-grey: #848c90;
 	--long-text-black: #333;
+	--black-90: #081921;
+	--bold-black-light: #010a0ed2;
 }
 
 * {
@@ -31,10 +32,11 @@ p {
 	color: var(--long-text-black);
 }
 
-/* 
+
 strong {
-	font-weight: normal;
-} */
+	font-weight: bold;
+	/* color: var(--bold-black-light); */
+}
 
 .container {
 	position: relative;
@@ -293,8 +295,13 @@ strong {
 
 .about .box .text.work_experience ul {
 	list-style-type: "-  ";
-	/* list-style-position: inside; */
 	margin-left: 17px;
+	text-align: justify;
+	font-size: 15px;
+}
+
+.about .box .text.work_experience ul li:not(:last-child) {
+	margin-bottom: 6px;
 }
 
 .about .box .text span {
